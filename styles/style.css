@@ -228,15 +228,23 @@ img{
     border-top-right-radius: 15px;
 }
 @media screen and (max-width:576px){
-    .logo1{
-        
+    .btn-c{
+        display: none;
+    }
+    .body{
+        font-size: 20px;
     }
     .navbar{
         display: none;
     }
     .navbar-container{
-        background-color: #8700FF;
     }
+    .menu {
+        width: 20px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
     .banner{
         flex-direction: column-reverse;
     }
