@@ -9,7 +9,7 @@
     color: #05D4DF;
 }
 .color-5D58EF{
-color: #5D58EF;
+    color: #5D58EF;
 }
 .color-FFFFFF{
     color: #FFFFFF;
@@ -57,11 +57,57 @@ ul{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
-
 /*banner style*/
 .banner{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
+}
+/*text size & styles*/
+body {
+    font-family: 'Quicksand';
+}
+p {
+    font-family: 'Raleway';
+}
+
+.r-15{
+    font-size: 15px;
+}
+.r-20{
+    font-size: 20px;
+}
+.r-16{
+    width: 175px;
+    height: 40px;
+    font-family: 'Raleway';
+    font-size: 15px;
+    border-radius: 38px;
+    position: relative;
+    top: -20px;
+}
+
+.q-56{
+    font-size: 56px;
+}
+.q-24{
+    font-size: 24px;
+}
+.q-42{
+    font-size: 30px;
+}
+.q-20{
+    font-size: 20px;
+}
+.q-46{
+    font-size: 46px;
+}
+.q-15{
+    font-size: 15px;
+}
+.footer-about-list{
+}
+.banner-img{
 }
 /*container style*/
 .curriculam{
@@ -84,9 +130,12 @@ background-image: linear-gradient(#DEF5FF 5%, #FFFFFF);
     background-color:#F2E8FF #FFFFFF;
     background-image: linear-gradient(#F2E8FF 5%, #FFFFFF);
 }
-
+a{
+    text-decoration: none;
+}
 /*stories*/
 .stories{
+    margin-top: 60px;
 background-color: #FFFFFF #FEA301;
 background-image: linear-gradient(#FFFFFF 30%,#FEA301);
 text-align: center;
@@ -96,7 +145,7 @@ text-align: center;
     grid-template-areas:
       "stories-01 stories-02 stories-03"
       "stories-01 stories-04 stories-05";
-    grid-template-columns: 2 repeat(2,1fr)
+    grid-template-columns: 2fr repeat(2,1fr)
 }
 .stories-01{
     grid-area: stories-01;
@@ -131,12 +180,7 @@ body{
     margin-left: 140px;
     margin-right: 140px;
 }
-body {
-    font-family: 'Quicksand';font-size: 24px;
-}
-p {
-    font-family: 'Raleway';font-size: 12px;
-}
+
 
 /*footer style*/
 footer
@@ -162,6 +206,68 @@ footer
 .footer-container{
     display: flex;
     justify-content: space-between;
+    justify-content: space-around;
 }
-.footer-about-list{
+.btn-va{
+    margin-top: 60px;
+}
+button{
+    font-size: 20px;
+    max-width: 197px;
+    max height: 50px;
+    border-radius: 12px;
+    font-family: 'Raleway';
+    border: none;
+}
+img{
+    max-width: 100%;
+    max-height: auto;
+}
+.card>img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+@media screen and (max-width:576px){
+    .logo1{
+        
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-container{
+        background-color: #8700FF;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .curriculam-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .stories-01{
+        display: none;
+    }
+    .stories-container{
+        display: grid;
+grid-template-areas: ;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .stories-01{
+        grid-area: stories-01;
+    }
+    .stories-02{
+        grid-area: stories-02;
+    }
+    .stories-03{
+        grid-area: stories-03;
+    }
+    .stories-04{
+    grid-area: stories-04;
+    }
+    .stories-05{
+        grid-area: stories-05;
+    }
+    .footer-section{
+flex-direction: column;
+    }
 }
